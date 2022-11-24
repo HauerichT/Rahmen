@@ -5,6 +5,10 @@ public class Rahmen {
 
     // Konstruktor zum Initialisieren des Textes
     public Rahmen(String[] text) {
+        if (text == null || text.length == 0) {
+            System.out.println("Das Text-Array ist leer.");
+            System.exit(0);
+        }
         this.text = text;
     }
 
